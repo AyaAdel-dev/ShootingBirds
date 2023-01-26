@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="path/to/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="css/styling.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <title>Start Game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body class="bg" style="overflow: hidden">
+    <div>
+      <div class="Table">
+        <table>
+          <tr>
+            <td>Welcome:</td>
+            <td>Scores:0</td>
+            <td>Time Limit:0</td>
+            <td>Birds Killed:0</td>
+            <td class="audiobtn">
+              <button class="btn" id="nyan-btn">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="startgame invisible">
+      <center>
+        <div class="startcontent">
+          <div id="left2" style="position: absolute; float: left">
+            <img src="images/gif/startgame.gif" class="startimage" />
+          </div>
+
+          <div id="right2">
+            <strong>
+              <p class="playername" style="font-size: x-large"></p
+            ></strong>
+            <p>your Last Score:<span class="lastscore"></span></p>
+            <p class="date"></p>
+            <p>You have to get More Than 50 Points to Win.</p>
+            <center>
+              <strong> <p>Good Luck ♥</p></strong>
+              <button class="startbtn startgamebtn">Start</button>
+            </center>
+          </div>
+        </div>
+      </center>
+    </div>
+    <!-- Win And Lose  -->
+    <div class="winlosediv invisible">
+      <div>
+        <center>
+          <img class="imgwinlose" />
+        </center>
+      </div>
+      <div>
+        <center>
+          <p class="winlose"></p>
+          <p class="score"></p>
+          <button class="playagain">Play Again</button>
+        </center>
+      </div>
+    </div>
+    <div>
+      <img src="images/gif/sleepyowl.gif" class="moto" />
+    </div>
+
+    <div id="bird" class="birdDiv">
+      <!-- <img src="images/gif/whitebird.gif" class="whitebird"> -->
+    </div>
+    <div id="bomb" class="bombDiv"></div>
+    <audio
+      class="shootbird"
+      src="audio/shooting.mp3"
+      preload="metadata"
+      type="audio/mpeg"
+    ></audio>
+    <audio
+      id="nyan"
+      src="audio/angrybird.mp3"
+      loop
+      autoplay
+      preload="metadata"
+      type="audio/mpeg"
+      
+    ></audio>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script> -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/game.js" type="module"></script>
+
+    <!-- <script src="./js/index.js"></script> -->
+  </body>
+</html>

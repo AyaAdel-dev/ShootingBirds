@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styling.css" />
+    <title>Welcome</title>
+</head>
+
+<body class="bg_index">
+ 
+    <center>
+        <fieldset class="mainfieldset">
+            <form action="game.html" method="get">
+                <div id="content">
+                    <div id="left">
+                        <img src="images/gif/giphy (15).gif" class="img_size" style="float:left;" />
+                    </div>
+
+                    <div id="right" >
+                        <label for="fname" class="headers">Enter Your Name</label>
+                       
+                        <input type="text" id="username"  name="fname" placeholder="username" required>
+                        <label for="gamelevel" class="headers">Game Level</label>
+                        <br>
+                        <select name="levels" id="levels" required>
+                            <option value="levelone">Level One</option>
+                            <!-- <option value="leveltwo">Level Two</option> -->
+                          </select>
+                    </div>
+                </div>
+                <!-- <div>
+
+                    <input type="reset" style="
+                margin: 20px;
+                border-radius: 2px;
+                background-color: hotpink;" />
+                    <input type="submit" style="border-radius: 2px; background-color: hotpink" />
+                </div> -->
+           
+            <br>
+            <hr class="new1">
+            <br>
+            <strong><label  class="headers">Game Bird Shooting Points</label></strong>
+            <br>
+            <div class="container">
+                <div class="image">
+                  <img src="images/gif/bluebird.gif" style="width: 80%">
+                </div>
+                <div class="text">
+                  <h2>: </h2>
+                </div> <div class="text">
+                    <h2 style="color:rgb(13, 13, 71);">+5 points</h2>
+                  </div>
+              </div>
+
+
+          <div class="container">
+            <div class="image">
+              <img src="images/gif/redbird.gif" style="width:50%">
+            </div>
+            <div class="text">
+              <h2>: </h2>
+            </div> <div class="text">
+                <h2 style="color:rgb(255, 255, 0);">+10 points</h2>
+              </div>
+          </div>
+          <div class="container">
+            <div class="image">
+              <img src="images/gif/blackbird2.gif" style="width:90%;">
+            </div>
+            <div class="text">
+              <h2>: </h2>
+            </div> <div class="text">
+                <h2 style="color:red;">-10 points</h2>
+              </div>
+          </div>
+          <!-- <br> -->
+          <button type="submit" class="startgamebtn">
+            <a href="game.html" style="text-decoration: none;" >Start Game</a> 
+          </button>
+        </form>
+        </fieldset>
+        
+    </center>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="/js/jquery.js"></script> -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
